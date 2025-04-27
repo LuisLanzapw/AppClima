@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App del clima</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="container my-3 shadow-lg" style="max-width: 500px; min-height: 400px;">
+        <h1 class="text-center titulo">EL Clima en </h1>
+        <form class="search-location">
+            <input type="text" name="city" placeholder="Que Ciudad?" autocomplete="off"
+                class="form-control text-muted rounded-5 p-3 shadow-lg">
+        </form>
+        <div class="card rounded-5 my-3 shadow-lg">
+            <div class="card-top text-center">
+                <div class="city-name my-3">
+                    <p>San Pedro Sula</p>
+                    <span>. . .</span>
+                </div>
+                <img src="img/night_image.svg" alt="" class="card-img-top">
+            </div>
+            
+            <div class="card-body">
+                <div class="lh-2 row">
+                    <div class="col-8 text-center temp">
+                        <span>30&deg;C</span>
+                    </div>
+                    <div class="col-4 condition-temp">
+                        <p class="condition">Tormenta con truenos</p>
+                        <p class="maxima">30&deg;C</p>
+                        <p class="minima">25&deg;C</p>
+                    </div>
+                    <div class="icon-container card shadow-5 mx-auto">
+                        <img src="img/cloud.svg" alt="" style="width: 100px; height: auto;">
+                    </div>
+                    <div class="lh-1 px-5 py-4 small">
+                        <dl class="row">
+                            <dt class="col-sm-7 text-end">Sensacion T.</dt>
+                            <dd class="col-sm-5">##&deg;C.</dd>
+        
+                            <dt class="col-sm-7 text-end">Velocidad T.</dt>
+                            <dd class="col-sm-5">##&deg;C.</dd>
+        
+                            <dt class="col-sm-7 text-end">Humedad T.</dt>
+                            <dd class="col-sm-5">##%&deg;C.</dd>
+        
+                            <dt class="col-sm-7 text-end">Presion T.</dt>
+                            <dd class="col-sm-5">##&deg;C.</dd>
+        
+                            <dt class="col-sm-7 text-end">Nivel de mar T.</dt>
+                            <dd class="col-sm-5">##&deg;C.</dd>
+        
+                            <dt class="col-sm-7 text-end">Visibilidad T.</dt>
+                            <dd class="col-sm-5">##&deg;C.</dd>
+        
+                        </dl>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</div> <!-- Marca de cierre del div container -->
+<!--Escribir las marcas script y crear los archivos que a continuación se indican-->
+<script src="js/request.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+</body>
+
+
+
+</html>
